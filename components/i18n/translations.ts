@@ -104,16 +104,16 @@ export const translations: Record<Lang, Dict> = {
       "",
 
     "details.howToGetThere.optionsTitle":
-      "",
+      "För att ta sig till Linköping, som är den närmaste staden till bröllopet, kan du:",
 
     "details.howToGetThere.option1":
-      "",
+      "Flyga direkt med KLM till Linköping via Amsterdam – Detta är det snabbaste alternativet, med en flygtid på cirka 1 timme och 40 minuter från Amsterdam.",
 
     "details.howToGetThere.option2":
-      "",
+      "Flyga till Stockholm, Sverige (Arlanda flygplats) och ta tåget – Direkt­tåg går från Arlanda flygplats till Linköping och resan tar cirka 3 timmar. Alternativt kan du hyra bil för den cirka 250 km långa resan.",
 
     "details.howToGetThere.option3":
-      "",
+      "Flyga till Köpenhamn, Danmark (Kastrup flygplats) och ta tåget – Direkt­tåg från Kastrup flygplats till Linköping tar cirka 4 timmar. Det är också möjligt att hyra bil för den cirka 450 km långa bilresan.",
     
       // Details page - Info Grid (RIGHT: Schedule)
     "details.infogrid.schedule.title": "SCHEMA",
