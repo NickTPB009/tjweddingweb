@@ -5,7 +5,7 @@ type Dict = Record<string, string>;
 export const translations: Record<Lang, Dict> = {
   "sv": {
     "home.hero.date": "Lördag 18 juli 2026",
-    "home.hero.invite": "Med kärlek och tacksamhet bjuder vi in dig att dela glädjen på vår bröllopsdag.",
+    "home.hero.invite": "Med kärlek och tacksamhet bjuder vi in dig att dela glädjen med oss på vårt bröllop.",
     "home.hero.location": "Borghamn Strand, Borghamnsvägen 1A, 592 93 Borghamn, Sverige",
     "lang.continue": "Fortsätt",
     "lang.english": "English",
