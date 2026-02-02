@@ -6,7 +6,7 @@ export const translations: Record<Lang, Dict> = {
   "sv": {
     "home.hero.date": "Lördag 18 juli 2026",
     "home.hero.invite": "Med kärlek och tacksamhet bjuder vi in dig att dela glädjen på vår bröllopsdag.",
-    "home.hero.location": "Borghamn Strand,\\nBorghamnsvägen 1A, 592 93 Borghamn,\\nSverige",
+    "home.hero.location": "Borghamn Strand, Borghamnsvägen 1A, 592 93 Borghamn, Sverige",
     "lang.continue": "Fortsätt",
     "lang.english": "English",
     "lang.portuguese": "Português (Brasil)",
@@ -58,9 +58,9 @@ export const translations: Record<Lang, Dict> = {
     "rsvp.stayDetails": "Boende",
     "rsvp.submitAttend": "SKICKA OSA",
     "rsvp.submitDecline": "SKICKA ÅTERBUD",
-    "rsvp.subtitle": "Välj ditt namn och meddela om du kan komma.",
+    "rsvp.subtitle": "Välj ditt namn och meddela om du kan komma eller ej.",
     "rsvp.title": "OSA",
-    "rsvp.yes": "JA, MED GLÄDJE",
+    "rsvp.yes": "JA, Absolut",
     "gifts.milestone.kicker": "WEDDING GIFTS",
     "gifts.milestone.subtitle": "Tack för din gåva — den hjälper oss att skapa minnen på vår smekmånad.",
     "gifts.milestone.receivedLabel": "Mottaget",
@@ -151,7 +151,7 @@ export const translations: Record<Lang, Dict> = {
       "Musik och dans fortsätter in på natten.",
     
       // ---------------- Travel cards (Details page) ----------------
-    "travel.cards.vikings.title": "Välkommen till Sverige – Vikingarnas land",
+    "travel.cards.vikings.title": "Sverige – Vikingarnas land",
     "travel.cards.vikings.p1":
     "Sverige är ett land med storslagen natur och rik historia. Ni firar i Östergötland, en region vars bördiga slätter och tillgång till viktiga vattenleder som Vättern gjorde området attraktivt redan under tidig forntid. Förekomsten av många runstenar i regionen visar dess betydelse under vikingatiden som centrum för handel, kommunikation och tidiga politiska strukturer. Mest känd är Rökstenen, rest omkring år 800–850 e.Kr., som bär den längsta kända runinskriften med cirka 760 runor och ofta kallas det första stycket skriven svensk litteratur. Denna unika sten ligger bara 15 minuters bilresa från Borghamn Strand.",
     "travel.cards.vikings.p2":
@@ -215,7 +215,7 @@ export const translations: Record<Lang, Dict> = {
   "en": {
     "home.hero.date": "Saturday, July 18, 2026",
     "home.hero.invite": "With love and gratitude, we invite you to share in the joy of our wedding day.",
-    "home.hero.location": "Borghamn Strand,\\nBorghamnsvägen 1A, 592 93 Borghamn,\\nSweden",
+    "home.hero.location": "Borghamn Strand, Borghamnsvägen 1A, 592 93 Borghamn, Sweden",
     "lang.continue": "Continue",
     "lang.english": "English",
     "lang.portuguese": "Brazil (Portuguese)",
@@ -434,7 +434,7 @@ export const translations: Record<Lang, Dict> = {
   "pt-BR": {
     "home.hero.date": "Sábado, 18 de julho de 2026",
     "home.hero.invite": "Com amor e gratidão, convidamos você a compartilhar a alegria do nosso casamento.",
-    "home.hero.location": "Borghamn Strand,\\nBorghamnsvägen 1A, 592 93 Borghamn,\\nSuécia",
+    "home.hero.location": "Borghamn Strand, Borghamnsvägen 1A, 592 93 Borghamn, Suécia",
     "lang.continue": "Continuar",
     "lang.english": "English",
     "lang.portuguese": "Português (Brasil)",
@@ -515,7 +515,7 @@ export const translations: Record<Lang, Dict> = {
     "quicklinks.rsvp": "RSVP",
     "quicklinks.gifts": "Presentes",
 
-    "details.invite.p1": "Convidamos você para o nosso casamento em Borghamn Strand, um lugar encantador onde grandes olmos encontram caminhos iluminados por velas. E onde começa a nossa próxima aventura.",
+    "details.invite.p1": "Convidamos você para o nosso casamento em Borghamn Strand, um lugar encantador onde grandes olmos encontram caminhos iluminados por velas. É onde começa a nossa próxima aventura.",
     "details.invite.ceremony": "Cerimônia: Kristbergs Kyrka (Igreja de Kristberg)",
     "details.invite.cta": "RSVP",
 
