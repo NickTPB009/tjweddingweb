@@ -140,6 +140,9 @@ export default function RsvpForm() {
   const [checkin, setCheckin] = useState("");
   const [checkout, setCheckout] = useState("");
 
+  const NO_ROOM_VALUE = "No room needed";
+  const needsRoom = attendance === "attending" && roomType !== NO_ROOM_VALUE;
+
   const guests = useMemo(() => GUESTS, []);
 
   const deadlineText = useMemo(() => {
@@ -217,7 +220,7 @@ export default function RsvpForm() {
                   alert("Please select room type.");
                   return;
                 }
-                if (!checkin || !checkout) {
+                if (needsRoom && (!checkin || !checkout)) {
                   alert("Please select check-in and check-out.");
                   return;
                 }
@@ -343,7 +346,15 @@ export default function RsvpForm() {
                       name="guestName"
                       required
                       value={guestName}
-                      onChange={(e) => setGuestName(e.target.value)}
+                      onChange={(e) => {
+                        const v = e.target.value;
+                        setRoomType(v);
+
+                        if (v === NO_ROOM_VALUE) {
+                          setCheckin("");
+                          setCheckout("");
+                        }
+                      }}
                       className="w-full rounded-xl border border-black/15 bg-white/90 px-4 py-3 text-sm outline-none focus:border-black/30"
                       disabled={status === "submitting" || isClosed}
                     >
@@ -444,20 +455,33 @@ export default function RsvpForm() {
                           {t("rsvp.stayDetails")}
                         </div>
 
+                        {!needsRoom && (
+                          <div className="mt-2 text-center text-xs opacity-70">
+                            No stay dates required when you select “No room
+                            needed”.
+                          </div>
+                        )}
+
                         <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
                           <label className="grid gap-2">
                             <span className="text-sm opacity-90">
-                              {t("rsvp.checkin")} *
+                              {t("rsvp.checkin")} {needsRoom ? "*" : ""}
                             </span>
+
                             <input
                               type="date"
                               name="checkin"
+                              required={needsRoom}
                               value={checkin}
                               onChange={(e) => setCheckin(e.target.value)}
                               min="2026-07-01"
                               max="2026-07-31"
                               className="w-full rounded-xl border border-black/15 bg-white/90 px-4 py-3 text-sm outline-none focus:border-black/30"
-                              disabled={status === "submitting" || isClosed}
+                              disabled={
+                                status === "submitting" ||
+                                isClosed ||
+                                !needsRoom
+                              }
                             />
                             <span className="text-[11px] opacity-60">
                               {t("rsvp.julyOnly")}
@@ -466,18 +490,23 @@ export default function RsvpForm() {
 
                           <label className="grid gap-2">
                             <span className="text-sm opacity-90">
-                              {t("rsvp.checkout")} *
+                              {t("rsvp.checkout")} {needsRoom ? "*" : ""}
                             </span>
+
                             <input
                               name="checkout"
                               type="date"
-                              required
+                              required={needsRoom}
                               value={checkout}
                               onChange={(e) => setCheckout(e.target.value)}
                               min={checkin || "2026-07-01"}
                               max="2026-07-31"
                               className="w-full rounded-xl border border-black/15 bg-white/90 px-4 py-3 text-sm outline-none focus:border-black/30"
-                              disabled={status === "submitting" || isClosed}
+                              disabled={
+                                status === "submitting" ||
+                                isClosed ||
+                                !needsRoom
+                              }
                             />
                             <span className="text-[11px] opacity-60">
                               {t("rsvp.julyOnly")}
