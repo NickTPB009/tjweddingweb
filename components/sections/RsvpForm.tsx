@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useMemo, useState } from "react";
 import { useI18n } from "@/components/i18n/useI18n";
 
 const RSVP_DEADLINE = new Date(2026, 2, 15, 23, 59, 59);
@@ -85,49 +85,12 @@ const GUESTS: string[] = [
   "Violeta Virgolino",
 ];
 
-const inputStyle: React.CSSProperties = {
-  width: "100%",
-  padding: "14px 14px",
-  borderRadius: 10,
-  border: "1px solid rgba(0,0,0,0.12)",
-  background: "rgba(255,255,255,0.92)",
-  fontSize: 14,
-  outline: "none",
-};
-
-const labelStyle: React.CSSProperties = {
-  fontSize: 13,
-  letterSpacing: "0.02em",
-  opacity: 0.9,
-};
-
-const buttonStyle: React.CSSProperties = {
-  padding: "14px 26px",
-  borderRadius: 999,
-  border: "1px solid rgba(0,0,0,0.10)",
-  background: "#8a826f",
-  color: "white",
-  letterSpacing: "0.14em",
-  textTransform: "uppercase",
-  fontSize: 12,
-};
-
-const pillStyle: React.CSSProperties = {
-  padding: "12px 18px",
-  borderRadius: 999,
-  border: "1px solid rgba(0,0,0,0.14)",
-  fontSize: 12,
-  letterSpacing: "0.16em",
-  textTransform: "uppercase",
-};
-
 export default function RsvpForm() {
   const { t } = useI18n();
 
   const [status, setStatus] = useState<
     "idle" | "submitting" | "success" | "error"
   >("idle");
-
   const [step, setStep] = useState<"choose" | "form">("choose");
   const [attendance, setAttendance] = useState<"attending" | "declined" | null>(
     null,
@@ -244,8 +207,15 @@ export default function RsvpForm() {
                 formData.set("email", email);
                 formData.set("guestsNumber", guestsNumber);
                 formData.set("roomType", roomType);
-                formData.set("checkin", checkin);
-                formData.set("checkout", checkout);
+
+                // Only include dates if a room is needed
+                if (needsRoom) {
+                  formData.set("checkin", checkin);
+                  formData.set("checkout", checkout);
+                } else {
+                  formData.set("checkin", "");
+                  formData.set("checkout", "");
+                }
               } else {
                 formData.delete("email");
                 formData.delete("guestsNumber");
@@ -346,15 +316,7 @@ export default function RsvpForm() {
                       name="guestName"
                       required
                       value={guestName}
-                      onChange={(e) => {
-                        const v = e.target.value;
-                        setRoomType(v);
-
-                        if (v === NO_ROOM_VALUE) {
-                          setCheckin("");
-                          setCheckout("");
-                        }
-                      }}
+                      onChange={(e) => setGuestName(e.target.value)}
                       className="w-full rounded-xl border border-black/15 bg-white/90 px-4 py-3 text-sm outline-none focus:border-black/30"
                       disabled={status === "submitting" || isClosed}
                     >
@@ -420,7 +382,15 @@ export default function RsvpForm() {
                           name="roomType"
                           required
                           value={roomType}
-                          onChange={(e) => setRoomType(e.target.value)}
+                          onChange={(e) => {
+                            const v = e.target.value;
+                            setRoomType(v);
+
+                            if (v === NO_ROOM_VALUE) {
+                              setCheckin("");
+                              setCheckout("");
+                            }
+                          }}
                           className="w-full rounded-xl border border-black/15 bg-white/90 px-4 py-3 text-sm outline-none focus:border-black/30"
                           disabled={status === "submitting" || isClosed}
                         >
