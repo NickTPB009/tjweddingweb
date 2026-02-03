@@ -61,15 +61,7 @@ export default function RegistryDashboard() {
                 </div>
               </div>
             </div>
-
-            <div className="mt-6 text-center text-xs sm:text-sm opacity-70 leading-relaxed">
-              {t("registry.thanks")}
-            </div>
           </div>
-        </div>
-
-        <div className="mt-8 text-center text-xs opacity-65">
-          {t("registry.bottomNote")}
         </div>
       </div>
     </section>
