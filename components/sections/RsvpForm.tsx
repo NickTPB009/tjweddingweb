@@ -506,7 +506,7 @@ export default function RsvpForm() {
                   </button>
                 </div>
 
-                <div className="text-center text-xs sm:text-sm opacity-65 leading-relaxed">
+                <div className="text-center text-xs sm:text-sm text-rose-800 opacity-65 leading-relaxed">
                   {attendance === "attending"
                     ? t("rsvp.collectAttend")
                     : t("rsvp.collectDecline")}

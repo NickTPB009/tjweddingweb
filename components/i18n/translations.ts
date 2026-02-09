@@ -45,7 +45,7 @@ export const translations: Record<Lang, Dict> = {
     "rsvp.areYouJoining": "Kommer du?",
     "rsvp.checkin": "Incheckning (datum)",
     "rsvp.checkout": "Utcheckning (datum)",
-    "rsvp.collectAttend": "Vi samlar in ditt namn, e-post, närvaro och boendedetaljer.",
+    "rsvp.collectAttend": "Boende har reserverats på Borghamn Strand för gäster som önskar stanna över natt. Vi rekommenderar starkt att stannar, eftersom det kan vara svårt att ordna taxi från denna plats. När du bekräftar ditt deltagande och rumstyp, kommer hotellet att kontakta dig för betalning och slutlig bekräftelse av rummet. ",
     "rsvp.collectDecline": "Vi samlar endast in ditt namn och närvaro.",
     "rsvp.deadlineLabel": "OSA senast:",
     "rsvp.email": "E-post",
@@ -101,7 +101,7 @@ export const translations: Record<Lang, Dict> = {
       "Vigseln kommer att hållas i Kristbergs kyrka i Borensberg, 30 km (30 minuter) från Linköping. Mottagningen kommer senare att äga rum på Borghamn Strand vid Vättern, 20-25 km (20-25 minuter) från kyrkan och cirka 50 km (45 minuter) från Linköping. Boende har förbokats på Borghamn Strand för gäster som önskar övernatta. Vi rekommenderar att ni bokar rum, eftersom taxibilar kan vara svåra att ordna från denna plats",
 
     "details.howToGetThere.accommodation":
-      "",
+      "Boende har reserverats på Borghamn Strand för gäster som önskar stanna över natten. Vi rekommenderar starkt att stanna över natten, eftersom det kan vara svårt att ordna taxi från denna plats. När du bekräftar ditt deltagande och bestämmer dig för att bo på samma hotell som festen, kommer hotellet att kontakta dig för betalning och slutlig bekräftelse.",
 
     "details.howToGetThere.optionsTitle":
       "För att ta sig till Linköping, som är den närmaste staden till bröllopet, kan du:",
@@ -254,7 +254,7 @@ export const translations: Record<Lang, Dict> = {
     "rsvp.areYouJoining": "Are you joining us?",
     "rsvp.checkin": "Check-in (date)",
     "rsvp.checkout": "Check-out (date)",
-    "rsvp.collectAttend": "We collect your name, email, attendance, and stay details.",
+    "rsvp.collectAttend": "Accommodation has been reserved at Borghamn Strand for guests who wish to stay overnight. We strongly recommend staying overnight, as taxis can be difficult to arrange from this location. Once you confirm your attendance and decide to stay at the same hotel as the party, the hotel will contact you for payment and final confirmation",
     "rsvp.collectDecline": "We collect your name and attendance only.",
     "rsvp.deadlineLabel": "RSVP deadline:",
     "rsvp.email": "Email",
@@ -314,7 +314,7 @@ export const translations: Record<Lang, Dict> = {
       "The wedding ceremony will be held at Kristbergs Church in Borensberg, 30 km (30 minutes) from Linköping. The reception will take place at Borghamn Strand on Lake Vättern, 20–25 km (20–25 minutes) from the church and approximately 50 km (45 minutes) from Linköping.",
 
     "details.howToGetThere.accommodation":
-      "Accommodation has been pre-booked at Borghamn Strand for guests who wish to stay overnight. We strongly recommend staying overnight, as taxis can be difficult to arrange from this location and drinking and driving is a serious offense in Sweden and never an acceptable option. It is advisable to drive to the church and eventually park at the reception venue until the following day.",
+      "Accommodation has been reserved at Borghamn Strand for guests who wish to stay overnight. We strongly recommend staying overnight, as taxis can be difficult to arrange from this location and drinking and driving is a serious offense in Sweden and never an acceptable option. It is advisable to drive to the church and eventually park at the reception venue until the following day.",
 
     "details.howToGetThere.optionsTitle":
       "To reach Linköping, which is the closest city to the wedding, you can:",
@@ -473,7 +473,7 @@ export const translations: Record<Lang, Dict> = {
     "rsvp.areYouJoining": "Você vai participar?",
     "rsvp.checkin": "Check-in (data)",
     "rsvp.checkout": "Check-out (data)",
-    "rsvp.collectAttend": "Coletamos seu nome, e-mail, presença e detalhes da estadia.",
+    "rsvp.collectAttend": "A acomodação foi pré-reservada. Recomendamos fortemente pernoitar, pois táxis podem ser difíceis de serem encontrados nessa localização. Caso decida pernoitar no local da festa, o hotel entrará em contato para o pagamento e a confirmação final.",
     "rsvp.collectDecline": "Coletamos apenas seu nome e presença.",
     "rsvp.deadlineLabel": "Prazo do RSVP:",
     "rsvp.email": "E-mail",
