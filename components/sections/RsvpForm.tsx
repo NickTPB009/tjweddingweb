@@ -3,7 +3,7 @@
 import React, { useMemo, useState } from "react";
 import { useI18n } from "@/components/i18n/useI18n";
 
-const RSVP_DEADLINE = new Date(2026, 2, 15, 23, 59, 59);
+const RSVP_DEADLINE = new Date(2026, 2, 30, 23, 59, 59);
 
 const GUESTS: string[] = [
   "Alexandre Nogueira Jahnecke",
@@ -112,7 +112,7 @@ export default function RsvpForm() {
     const yyyy = RSVP_DEADLINE.getFullYear();
     const mm = String(RSVP_DEADLINE.getMonth() + 1).padStart(2, "0");
     const dd = String(RSVP_DEADLINE.getDate()).padStart(2, "0");
-    return `${dd}/${mm}/${yyyy}`;
+    return `${15}/${mm}/${yyyy}`;
   }, []);
 
   const isClosed = useMemo(() => {
