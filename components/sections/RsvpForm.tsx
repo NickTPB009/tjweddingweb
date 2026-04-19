@@ -61,6 +61,7 @@ const GUESTS: string[] = [
   "Margareth Laroca",
   "Markus Jonsson & Anniqa Sandell",
   "Mattias & Åsa Vernersson",
+  "Marcio Bigoto",
   "Neasa",
   "Nick & Melinda",
   "Niklas & Pernilla Nilsson",
