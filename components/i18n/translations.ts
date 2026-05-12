@@ -149,6 +149,21 @@ export const translations: Record<Lang, Dict> = {
     "details.infogrid.schedule.day2.item8.time": "Sen kväll",
     "details.infogrid.schedule.day2.item8.text":
       "Musik och dans fortsätter in på natten.",
+
+      // Details page - guest Info
+    "details.guestInfo.title": "TOASTMASTER & GÄSTINFORMATION",
+    "details.guestInfo.toastmasterTitle": "Toastmaster och tal",
+    "details.guestInfo.toastmasterBody": "Toastmastern ansvarar för ordningen under middagen och fördelar ordet till talarna. Alla som vill hålla tal, uppträda eller bjuda på upptåg bör anmäla sig i förväg till toastmastern. Lekar och skämt ska hållas i god smak och aldrig ske på brudparets bekostnad.",
+    "details.guestInfo.toastmasterLabel": "Toastmaster:",
+    "details.guestInfo.traditionTitle": "En klassisk svensk tradition",
+    "details.guestInfo.traditionBride": "Om bruden lämnar bordet får alla kvinnor gå fram och ge brudgummen en kindpuss.",
+    "details.guestInfo.traditionGroom": "Om brudgummen lämnar bordet får alla män gå fram och ge bruden en kindpuss.",
+    "details.guestInfo.dressCodeTitle": "Klädkod:",
+    "details.guestInfo.dressCode": "Kavaj / Lounge suit",
+    "details.guestInfo.whiteNote": "Vänligen undvik helvitt (detta är förbehållet bruden).",
+    "details.guestInfo.giftsTitle": "Presenter och uppvaktning",
+    "details.guestInfo.giftsBody": "Då vi inte har möjlighet att ta med fysiska gåvor önskar vi oss istället ett bidrag till vår bröllopsresa.",
+    "details.guestInfo.finalNote": "Visa hänsyn mot övriga gäster och ha kul!",
     
       // ---------------- Travel cards (Details page) ----------------
     "travel.cards.vikings.title": "Sverige – Vikingarnas land",
@@ -362,6 +377,21 @@ export const translations: Record<Lang, Dict> = {
     "details.infogrid.schedule.day2.item8.time": "Late evening",
     "details.infogrid.schedule.day2.item8.text":
       "Music and dancing continue into the night.",
+
+      // Details page - guest Info
+    "details.guestInfo.title": "TOASTMASTER & GUEST INFORMATION",
+    "details.guestInfo.toastmasterTitle": "Toastmaster and Speeches",
+    "details.guestInfo.toastmasterBody": "The Toastmaster is responsible for the order of events during dinner and for introducing the speakers. Anyone who wishes to give a speech, perform, or organize a surprise should register in advance with the Toastmaster. Games and jokes should be in good taste and never at the expense of the bride and groom.",
+    "details.guestInfo.toastmasterLabel": "Toastmaster:",
+    "details.guestInfo.traditionTitle": "A Classic Swedish Tradition",
+    "details.guestInfo.traditionBride": "If the bride leaves the table, all women are invited to come up and give the groom a kiss on the cheek.",
+    "details.guestInfo.traditionGroom": "If the groom leaves the table, all men are invited to come up and give the bride a kiss on the cheek.",
+    "details.guestInfo.dressCodeTitle": "Dress Code:",
+    "details.guestInfo.dressCode": "Lounge suit",
+    "details.guestInfo.whiteNote": "Please avoid wearing all-white (this is reserved for the bride).",
+    "details.guestInfo.giftsTitle": "Gifts",
+    "details.guestInfo.giftsBody": "As we are unable to bring physical gifts back with us, we would instead appreciate a contribution toward our honeymoon.",
+    "details.guestInfo.finalNote": "Please show consideration for all guests and have a wonderful time!",
       
     // ---------------- Travel cards (Details page) ----------------
     "travel.cards.vikings.title": "Welcome to Sweden – A Land of Vikings",
@@ -579,6 +609,21 @@ export const translations: Record<Lang, Dict> = {
     "details.infogrid.schedule.day2.item8.time": "Noite",
     "details.infogrid.schedule.day2.item8.text":
       "Música e dança continuam pela noite.",  
+
+      // Details page - guest Info
+    "details.guestInfo.title": "MESTRE DE CERIMÔNIAS & INFORMAÇÕES",
+    "details.guestInfo.toastmasterTitle": "Mestre de Cerimônias e Discursos",
+    "details.guestInfo.toastmasterBody": "O Mestre de Cerimônias é responsável pela ordem dos eventos durante o jantar e por introduzir os oradores. Quem desejar fazer um discurso, uma apresentação ou organizar alguma surpresa deve se registrar com antecedência com o Mestre de Cerimônias. Brincadeiras e piadas devem ser de bom gosto e nunca às custas dos noivos.",
+    "details.guestInfo.toastmasterLabel": "Mestre de Cerimônias:",
+    "details.guestInfo.traditionTitle": "Uma tradição clássica sueca",
+    "details.guestInfo.traditionBride": "Se a noiva sair da mesa, todas as mulheres estão convidadas a dar um beijo no rosto do noivo.",
+    "details.guestInfo.traditionGroom": "Se o noivo sair da mesa, todos os homens estão convidados a dar um beijo no rosto da noiva.",
+    "details.guestInfo.dressCodeTitle": "Traje:",
+    "details.guestInfo.dressCode": "Social completo / Lounge suit",
+    "details.guestInfo.whiteNote": "Por favor, evite usar branco total, pois essa cor é reservada exclusivamente para a noiva.",
+    "details.guestInfo.giftsTitle": "Presentes",
+    "details.guestInfo.giftsBody": "Como não teremos como levar presentes físicos conosco, agradeceríamos, em vez disso, uma contribuição para a nossa viagem de lua de mel.",
+    "details.guestInfo.finalNote": "Pedimos a gentileza de demonstrarem consideração por todos os convidados e divirtam-se muito!",
     
       // ---------------- Travel cards (Details page) ----------------
     "travel.cards.vikings.title": "Bem-vindo à Suécia – Terra dos Vikings",

@@ -6,6 +6,7 @@ import DetailsImage from "../../components/sections/DetailsImage";
 import DetailsInfoGrid from "../../components/sections/DetailsInfoGrid";
 import TravelStayHero from "../../components/sections/TravelStayHero";
 import TravelCards from "../../components/sections/TravelCards";
+import DetailsGuestInfo from "../../components/sections/DetailsGuestInfo";
 
 export default function DetailsPage() {
   return (
@@ -26,6 +27,10 @@ export default function DetailsPage() {
 
           <section className="pb-10 sm:pb-14 lg:pb-16">
             <DetailsInfoGrid />
+          </section>
+
+          <section className="pb-10 sm:pb-14 lg:pb-16">
+            <DetailsGuestInfo />
           </section>
         </div>
 
