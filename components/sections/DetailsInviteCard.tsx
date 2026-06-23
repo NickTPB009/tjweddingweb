@@ -15,6 +15,9 @@ export default function DetailsInviteCard() {
               {t("details.invite.p1")}
             </p>
             <p className="m-0 break-words">{t("details.invite.ceremony")}</p>
+            <p className="m-0 break-words">
+              {t("details.invite.ceremony.address")}
+            </p>
           </div>
 
           <div className="mt-7 sm:mt-9 flex justify-center">

@@ -87,6 +87,7 @@ export const translations: Record<Lang, Dict> = {
     "quicklinks.gifts": "Bröllopsgåvor",
     "details.invite.p1": "Vi bjuder in dig till vårt bröllop på Borghamn Strand – en förtrollande plats där höga almar möter ljuslyktor längs stigarna. Och där vårt nästa äventyr börjar.",
     "details.invite.ceremony": "Vigsel: Kristbergs kyrka",
+    "details.invite.ceremony.address": "Adress: Kristberg 406, 591 77 Borensberg, Sweden",
     "details.invite.cta": "OSA",
 
     "travel.hero.kicker": "Om Sverige",
@@ -314,6 +315,7 @@ export const translations: Record<Lang, Dict> = {
     // ✅ Details page (Phase 1)
     "details.invite.p1": "We invite you to our wedding at Borghamn Strand, an enchanting place where towering elms meet candlelit pathways. And where our next adventure begins.",
     "details.invite.ceremony": "Wedding Ceremony: Kristbergs Kyrka (Kristbergs Church)",
+    "details.invite.ceremony.address": "Address: Kristberg 406, 591 77 Borensberg, Sweden",
     "details.invite.cta": "RSVP",
 
     "travel.hero.kicker": "About Sweden",
@@ -547,6 +549,7 @@ export const translations: Record<Lang, Dict> = {
 
     "details.invite.p1": "Convidamos você para o nosso casamento em Borghamn Strand, um lugar encantador onde grandes olmos encontram caminhos iluminados por velas. É onde começa a nossa próxima aventura.",
     "details.invite.ceremony": "Cerimônia: Kristbergs Kyrka (Igreja de Kristberg)",
+    "details.invite.ceremony.address": "Endereço: Kristberg 406, 591 77 Borensberg, Sweden",
     "details.invite.cta": "RSVP",
 
     "travel.hero.kicker": "Sobre a Suécia",
