@@ -37,6 +37,19 @@ export default function RegistryDashboard() {
           </div>
         </div>
 
+        {/* (Sweden only) Bank details */}
+        <div className="mt-10 flex justify-center">
+          <div className="w-full max-w-[640px] rounded-2xl border border-black/10 bg-[#f4f2ee] p-5 sm:p-7">
+            <div className="text-center uppercase tracking-[0.16em] text-[11px] sm:text-xs opacity-75">
+              {t("registry.sweden.bankTitle")}
+            </div>
+
+            <div className="mt-5 grid gap-3 text-[15px] sm:text-base leading-relaxed text-[#333]">
+              <InfoRow label={t("registry.swish")} value="072 517 1719" />
+            </div>
+          </div>
+        </div>
+
         {/* Bank details */}
         <div className="mt-10 flex justify-center">
           <div className="w-full max-w-[640px] rounded-2xl border border-black/10 bg-[#f4f2ee] p-5 sm:p-7">
@@ -49,8 +62,15 @@ export default function RegistryDashboard() {
                 label={t("registry.accountName")}
                 value="Karl Karlsson"
               />
-              <InfoRow label={t("registry.bsb")} value="067 103" />
-              <InfoRow label={t("registry.accountNumber")} value="1075 7427" />
+              <InfoRow label={t("registry.bsb")} value="CTBAAU2S" />
+              <InfoRow
+                label={t("registry.accountNumber")}
+                value="067 103 107 574 27"
+              />
+              <InfoRow
+                label={t("registry.address")}
+                value="5 Huon Ct, 4501 Lawnton, Australia QLD"
+              />
 
               <div className="mt-2 rounded-xl border border-black/5 bg-white/55 px-4 py-3">
                 <div className="text-xs uppercase tracking-[0.12em] opacity-70">
